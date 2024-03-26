@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">FoodPlanner</string>
+    <string name="EnteryourEmail">Enter Email</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="loginlock">Already Have an Account? </string>
+
+    <string name="WelcomeEntrance">Springles</string>
+    <string name="welcome">Welcome back! \n you\'re just a tap away \n from something delicious.</string>
+    <string name="userName">User Name</string>
+    <string name="WelcomeSignUp"> Save delicious recipes And get personalized content.</string>
+    <string name="email">Email</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="skip">Skip</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up with Email</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ingredient">What you need</string>
+    <string name="fettuccine_alfredo">fettuccine_alfredo</string>
+    <string name="step">steps</string>
+    <string name="preparation_video">preparation_video</string>
+    <!--Week days-->
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="favorite">Favorite</string>
+    <string name="nav_host_fragment">nav_host_fragment</string>
+    <string name="login2">"  login"</string>
+    <string name="PlanMeal">Plan Your Meal</string>
+    <string name="steps">Steps</string>
+    <string name="entrance">Springles Cook  with  Confiedence.</string>
+    <string name="searchText">Search</string>
+    <string name="searchIng">Search by Ingredients</string>
+    <string name="searchCat">Search by Meal </string>
+    <string name="searchCoun">Discover Countries popular Meals</string>
+    <string name="home">Daily Inspirestion</string>
+    <string name="trend">Trending Now</string>
+    <string name="poprecipes">Popular Recipes</string>
+    <string name="favmeals">My Saved Recipes</string>
+    <string name="savetext">Save Your First Recipe!</string>
+    <string name="savetextt">Tab seve ICON  to save your recipe</string>
+    <string name="plan">Get ready for your plans</string>
+    <string name="cook">Cook With Confidence</string>
+    <string name="signupp">SignUp</string>
+    <string name="editProfile">Edit Your Profile</string>
+    <string-array name="flags">
+        <item>https://www.worldometers.info/img/flags/us-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/uk-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ca-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ch-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/hr-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/nl-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/eg-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/fr-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/gr-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/in-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ei-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/it-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/jm-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ja-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ke-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/my-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/mx-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/mo-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/pl-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/po-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/rs-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/sp-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/th-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ts-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/tu-flag.gif</item>
+        <item>https://www.freepnglogos.com/uploads/globe-png/globe-icon-aquanox-icons-softiconsm-34.png</item>
+        <item>https://www.worldometers.info/img/flags/vm-flag.gif</item>
+    </string-array>
+
+    <string-array name="weekdays">
+        <item>Saturday</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+    <string-array name="ingredientPhotoUrls">
+        <item>https://www.themealdb.com/images/ingredients/ingredient1.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient2.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient3.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient4.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient5.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient6.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient7.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient8.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient9.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient10.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient11.png</item>
+        <item>https://www.themealdb.com/images/ingredients/ingredient12.png</item>
+    </string-array>
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="yourEmail">Your Email</string>
+    <string name="changeProfileName">Change Profile Name</string>
+
+</resources>

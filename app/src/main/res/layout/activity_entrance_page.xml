@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back31"
+    tools:context=".splashEntrance.view.EntrancePage">
+
+    <Button
+        android:id="@+id/skipBtnID"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#DA88E8"
+        android:text="@string/skip"
+        android:textColor="#E9DCEC"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:iconTint="#9C27B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/googleID"
+        android:layout_width="77dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/googlesignn"
+        android:contentDescription="TODO"
+        android:text="@string/common_signin_button_text"
+        app:layout_constraintBottom_toTopOf="@+id/signUpBtnID"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/signUpBtnID"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/signup"
+        android:textColor="#120A0A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/logInID"
+        android:layout_width="93dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#ECECEC"
+        android:text="@string/login"
+
+        android:textColor="#000000"
+        android:textColorHint="#EAE1E1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBtnID"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textWelcomeID"
+        android:layout_width="302dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/aguafina_script"
+        android:text="@string/WelcomeEntrance"
+        android:textColor="#EBEDFB"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="266dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/loginlock"
+        android:textColor="#FAF8F8"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBtnID" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="277dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="48dp"
+        android:fontFamily="@font/aguafina_script"
+        android:text="@string/cook"
+        android:textColor="#E8DBDB"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcomeID" />
+
+    <ImageButton
+        android:id="@+id/facbookID"
+        android:layout_width="81dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/facebook"
+        android:text="@string/common_signin_button_text"
+        app:layout_constraintBottom_toBottomOf="@+id/googleID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/googleID"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

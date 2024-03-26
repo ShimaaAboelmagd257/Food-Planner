@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.foodplanner.homeforyou.view.Home"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_home_to_searchresult"
+            app:destination="@id/searchresult" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealsplan"
+        android:name="com.example.foodplanner.mealPlans.view.MealsPlan"
+        android:label="fragment_plan_meals"
+        tools:layout="@layout/fragment_meals_plan" >
+    </fragment>
+    <fragment
+        android:id="@+id/favoritemeals"
+        android:name="com.example.foodplanner.favoriteMeals.view.FavouriteMeals"
+        android:label="fragment_favorite_meals"
+        tools:layout="@layout/fragment_favourite_meals" />
+    <fragment
+        android:id="@+id/userprofile"
+        android:name="com.example.foodplanner.profile.view.UserProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/searchpage"
+        android:name="com.example.foodplanner.search.searchPage.view.SearchPage"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search_page" >
+        <action
+            android:id="@+id/action_searchpage_to_searchresult"
+            app:destination="@id/searchresult" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchresult"
+        android:name="com.example.foodplanner.search.searchresults.view.SearchResult"
+        android:label="fragment_search_results"
+        tools:layout="@layout/fragment_search_result"  >
+        <argument
+            android:name="ingredient"
+            app:argType="string"
+            android:defaultValue="@null"  />
+        <argument
+            android:name="category"
+            app:argType="string"
+            android:defaultValue="@null"  />
+        <argument
+            android:name="country"
+            app:argType="string"
+            android:defaultValue="@null"  />
+    </fragment>
+</navigation>

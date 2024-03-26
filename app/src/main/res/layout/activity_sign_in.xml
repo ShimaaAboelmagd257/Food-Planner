@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac110"
+    tools:context=".authantication.signin.view.SignInActivity">
+
+
+    <EditText
+        android:id="@+id/EmaiID"
+        android:layout_width="280dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:background="#FDFDFD"
+        android:ems="10"
+        android:hint="@string/EnteryourEmail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#A59FA1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/paswordID"
+        android:layout_width="275dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/design_default_color_surface"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="#0C0B0B"
+        android:textColorHint="#A59FA1"
+        app:layout_constraintEnd_toEndOf="@+id/EmaiID"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/EmaiID"
+        app:layout_constraintTop_toBottomOf="@+id/EmaiID"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginbtnID"
+        android:layout_width="124dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F44480"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/login"
+        android:textColor="#E8E6E6"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paswordID"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="308dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/allura"
+        android:text="@string/welcome"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textDirection="anyRtl"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="77dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="116dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

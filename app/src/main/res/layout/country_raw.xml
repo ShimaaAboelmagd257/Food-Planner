@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/cardCounty"
+    android:layout_width="wrap_content"
+    android:layout_height="160dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+   >
+
+    <ImageView
+        android:id="@+id/imageCounty"
+        android:layout_width="145dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/countyName"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+</androidx.cardview.widget.CardView>

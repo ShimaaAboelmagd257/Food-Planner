@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:backgroundTint="#FFFFFF"
+    android:background="#FFFFFF"
+
+    tools:context=".mealPreparation.view.MealPreparation"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/mealPhoto"
+            android:layout_width="412dp"
+            android:layout_height="298dp"
+
+            android:layout_marginBottom="48dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toTopOf="@+id/itemPageMealName"
+            app:layout_constraintDimensionRatio="16:10"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/itemPageMealName"
+            android:layout_width="276dp"
+            android:layout_height="76dp"
+
+            android:fontFamily="@font/allura"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/MealCountry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/MealCountry"
+            android:layout_width="267dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="@font/allura"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/addtocalender"
+            app:layout_constraintEnd_toEndOf="@+id/itemPageMealName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/itemPageMealName" />
+
+        <ImageButton
+            android:id="@+id/addtocalender"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="496dp"
+            android:background="@drawable/ic_baseline_calendar_month_24"
+            android:contentDescription="@string/common_signin_button_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/add_to_favorite"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="48dp"
+            android:background="@drawable/ic_baseline_favorite_24"
+            android:contentDescription="@string/common_signin_button_text"
+            app:layout_constraintBottom_toBottomOf="@+id/addtocalender"
+            app:layout_constraintStart_toEndOf="@+id/addtocalender"
+            app:layout_constraintTop_toTopOf="@+id/addtocalender"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/Steps"
+            android:layout_width="103dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/steps"
+            android:textColor="@color/purple_700"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientRecyclerView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ingredientRecyclerView"
+            android:layout_width="375dp"
+            android:layout_height="343dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/ingrediant_raw"
+            tools:orientation="vertical"
+            tools:spanCount="3" />
+
+        <TextView
+            android:id="@+id/PreparationVideo"
+            android:layout_width="271dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/preparation_video"
+            android:textColor="@color/purple_700"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemPageMealSteps" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/ingredient"
+            android:textColor="@color/purple_700"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addtocalender" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/videoView"
+            android:layout_width="376dp"
+            android:layout_height="257dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.611"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PreparationVideo" />
+
+        <TextView
+            android:id="@+id/itemPageMealSteps"
+            android:layout_width="354dp"
+            android:layout_height="482dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/step"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Steps" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

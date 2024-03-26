@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/favoritemeals"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:background="#FFFFFF"
+
+    tools:context=".favoriteMeals.view.FavouriteMeals">
+
+    <TextView
+        android:id="@+id/favText"
+        android:layout_width="322dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/allura"
+        android:text="@string/favmeals"
+        android:textColor="#070C23"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favrecyclerView"
+        android:layout_width="355dp"
+        android:layout_height="728dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/seaveText"
+        android:layout_width="321dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="316dp"
+        android:fontFamily="@font/allura"
+        android:text="@string/savetext"
+        android:textColor="#641471"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favText" />
+
+    <TextView
+        android:id="@+id/saveText2"
+        android:layout_width="307dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/allura"
+        android:text="@string/savetextt"
+        android:textColor="#070C23"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seaveText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
